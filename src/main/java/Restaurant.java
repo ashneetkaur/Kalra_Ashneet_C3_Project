@@ -80,4 +80,13 @@ public class Restaurant {
         return name;
     }
 
+    public int totalCostOfSelectedItems(List<String> selectedItems){
+        int totalPrice=0;
+        for(String findItem:selectedItems){
+            Item item=findItemByName(findItem);
+            totalPrice+=item.getPrice();
+        }
+        return totalPrice;
+    }
+
 }

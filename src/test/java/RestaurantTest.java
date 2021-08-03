@@ -67,6 +67,7 @@ class RestaurantTest {
         selectedItems.add("Sweet corn soup");
         selectedItems.add("Vegetable lasagne");
         int totalPrice=restaurant.totalCostOfSelectedItems(selectedItems);
+        assertEquals(388,totalPrice);
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
